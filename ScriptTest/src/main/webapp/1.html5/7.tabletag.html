@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>1.테이블 태그.html</title>
+ </head>
+ <body>
+  <!-- 
+    표를 작성할때 테두리(border=n(선의굵기),width,height(표의 크기)
+	                                                       =>픽셀수/상대적인 단위 %
+		             cellspacing->쉘과 쉘사이의 거리(0)
+					 cellpadding->쉘과 문자열 사이의 거리(0)
+					 align="left,center,right"
+					 table heading(th)태그=>정가운데배치,글자는 굵게
+					 bgcolor="색깔(영어) 16진수"
+					 속성명="속성값"을 부여할때 "  "은 안줘도 실행이 되지만
+					 xml에서는 반드시 " "을 주기때문에 주는것을 권장
+  -->
+  <center>
+  <table border="1"  width="70%"  height="100%"
+             cellpadding="10">
+	  <tr bgcolor="yellow"><!-- 행 -->
+			<!-- <td><center><b>월</b></center></td> --><!-- 열 -->
+			<th>월</th>
+			<th>수</th>
+			<th>금</th>
+	  </tr>
+	  <tr>
+	       <td align="left" bgcolor="#00ff33">왼쪽</td><!-- 열 -->
+		   <td align="center" bgcolor=#993366>가운데</td>
+		   <td align="right" bgcolor="green">오른쪽</td>
+	  </tr>
+  </table>
+  </center>
+ </body>
+</html>

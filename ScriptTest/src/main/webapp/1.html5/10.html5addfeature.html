@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>4.html5에서 추가된 속성.html</title>
+ </head>
+ <body>
+  <form name="frm">
+     <fieldset><!-- 입력받는 부분을 그룹으로 묶어줄때 사용 -->
+		<legend>로그인 창</legend><!-- 묶어줄때 사용하는 이름 -->
+		이름:<input type="text" name="name"><br>
+		암호:<input type="password" name="pw"><br>
+		<input type="submit" value="로그인">
+	 </fieldset><p>
+
+    <fieldset>
+	      <!-- 
+ 1.required=>필수입력=>전송버튼을 눌렀을때 적용이 된다.(필수입력이라는 메세지출력)
+ 2.placeholder="툴팁문자열 표시"(미리 보기 기능제공)=>데이터입력 양식을 보여줄때
+ 3.autofocus="autofocus" 입력받은 값중에서 특정항목에 커서를 넣고 싶을때 사용
+    input type="email" =>이메일만 전문적으로 입력을 받는 항목
+	 유효성검사 목적때문에 이러한 속성이 제공
+	  =>올바른 값만 입력을 받을 수있도록 만들어놓은 규칙을 검사
+		  -->
+			<legend>html5에 추가속성</legend>
+			사용자 id:<input type="text" name="id" size="10" 
+			                autofocus="autofocus" required ><br>
+			암호     <input type="password" name="pw" size="10" required placeholder="암호를 입력하세요"><br>
+			이메일:<input type="email" name="email" size="10" required
+			            placeholder="test@abc.com"><br>
+            원하는 주문갯수를 설정해주세요<br>
+<!-- input type="number" (숫자입력받을때)
+        min="최소값" max="최대값"  step="증가/감소" value="현재값"-->
+		<input type="number" min="1" max="20" step="2" value="1"><br>
+		<input type="range" min="1" max="20" step="2" value="1"><br>
+		<input type="search"><br><!-- 입력한 값을 취소시 x를 클릭하면 된다. -->
+		원하는 색깔을 선택하세요
+		<input type="color"><p><!-- chrome -->
+		원하는 날짜와 시간을 설정해주세요<br>
+		<input type="date"><br>
+		<input type="time"><br>
+			<input type="submit" value="로그인">
+	</fieldset><p>
+	
+  </form>
+  <!-- <input type="submit" value="로그인"> 폼밖에서 사용X -->
+ </body>
+</html>

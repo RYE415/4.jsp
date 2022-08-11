@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<title>04.$.ajax().html</title>
+<!-- <people>
+  <person>
+      <name>홍길동</name>
+      <job>학생</job>
+      <age>23</age>
+  </person> -->
+<script>
+  $(function(){
+	  //1.url요청문서 2.매개변수를 전달(생략이 가능) 3.콜백함수
+	  $.ajax('getXml.jsp',{
+		  //data:~매개변수가 없으면 생략
+		  success:function(data){
+			  //분리작업->(=파싱분리) parse->find() or filter()
+			  $(data).find('person').each
+		  }
+	  })
+  })
+</script>
+</head>
+<body>
+	<div id="output">
+		<!-- 
+		<ul>
+			<li>홍길동</li>
+			<li>학생</li>
+			<li>23</li>
+		</ul>
+		,,, 
+		-->
+	</div>
+	
+</body>
+</html>

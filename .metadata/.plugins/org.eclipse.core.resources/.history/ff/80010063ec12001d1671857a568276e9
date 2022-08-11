@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<title>02-2.animate().html</title>
+
+<script>
+  $(function(){
+  })
+</script>
+</head>
+<body>
+	<p><button class="btn1">버튼1</button></p>
+	<span class="txt1">"500px"로 이동</span>
+	
+</body>
+</html>

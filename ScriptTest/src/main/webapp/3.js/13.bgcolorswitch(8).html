@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>8.배경색을 변경(8).html</title>
+  <style>
+      div#box{
+          width:200px;
+		  height:200px;
+		  background:#ffffff; /* white */
+		  border:2px solid black;
+	  }
+  </style>
+  <script>
+       function setRed(){
+         //배경색에 빨강색을 부여할 태그정보를 얻어옴(객체정보)=>id
+		 var box=document.getElementById("box");
+		 //alert(box) style(상위속성)="background(하위속성):red
+		 //태그정보.상위속성명.하위속성명=변경할값(저장할값)
+		 box.style.background="#ff0000";//"red"
+	   }
+	   //var 변수명=function(){} //함수명이 없는 함수=>익명함수(이름이 없는 함수)
+	   //변수명이 함수이름역할을 한다. 변수명()
+	   //function setGreen(){
+		var setGreen=function(){
+         var box=document.getElementById("box");
+         box.style.background="#00ff00";//"green"
+	   }
+	   function setBlue(){
+        var box=document.getElementById("box");
+         box.style.background="#0000ff";
+	   }
+  </script>
+ </head>
+ <body>
+    <input type="button" value="Red" onclick="setRed()">
+	<input type="button" value="Green" onclick="setGreen()">
+	<input type="button" value="Blue" onclick="setBlue()">
+	<p>
+	<!-- <div id="box" style="background:red"> -->
+	<div id="box">
+	<div id="box2">
+ </body>
+</html>

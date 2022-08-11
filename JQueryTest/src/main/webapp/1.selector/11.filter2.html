@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<title>11.filter2.html</title>
+
+<script>
+  $(function(){
+	  //선택자(같은 태그->속성으로 구분)-> 같은 태그인데 만약에 속성이 없다면?
+	  //어떻게 구분해서 스타일 적용?
+	  /*
+		요소:contains(찾는 문자열)=>찾는 문자열을 가진 태그를 찾기
+		요소:eq(n)=>n번째 위치를 가진 태그 찾기(인덱스 번호가 같은 거)
+				 =>ex)~where ename='홍길동'
+		요소:gt(n)=>n번째 위치의 태그보다 큰 위치를 가진 태그 찾기 ex)>3
+		요소:lt(n)=>n번째 위치의 태그보다 작은 위치를 가진 태그 찾기 ex)<2
+		요소:not(선택자)=>선택자와 일치하지 않은 태그 찾기
+		요소:has(특정태그)=>특정태그를 찾을 때 사용
+	  */
+	  $('tr:even').css('background','pink');//내부적으로는 인덱스는 0부터
+	  //추가
+	  $('td:contains(A형)').css('background','purple');
+	//$('tr:first').css('font-size','23pt').css('background','yellow');
+	//$('tr:eq(0)').css('font-size','23pt').css('background','green');
+	  $('tr').eq(0).css('font-size','23pt').css('background','green');
+	//$('tr:gt(2)').css('font-family','바탕체').css('font-size','16pt').css('color','red');
+	  $('tr:lt(2)').css('font-family','바탕체').css('font-size','16pt').css('color','red');
+	  $('tr').not(':even').css('color','cyan');//홀수번째 태그 찾아서 글자색 cyan
+	  $('tr').last().css('font-size','30pt').css('background','cyan').css('color','red');//글자색은 red
+	  //추가(th)태그를 찾아서 적용
+	  $('tr:has(th)').css('font-family','궁서체').css('font-size','50pt');
+  })
+</script>
+</head>
+<body>
+	<center>
+		<table border="1">
+			<tr><th>이름</th><th>혈액형</th></tr> <!-- 0번째 -->
+			<tr><td>테스트</td><td>A형</td></tr>
+			<tr><td>임 시</td><td>B형</td></tr>
+			<tr><td>테스트2</td><td>O형</td></tr>
+			<tr><td>테스트3</td><td>AB형</td></tr> <!-- 4번째 -->
+		</table>
+	</center>
+	
+</body>
+</html>

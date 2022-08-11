@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<title>03.TabMenu.html</title>
+
+<script>
+  $(function(){
+  })
+</script>
+</head>
+<body>
+	<div id="container">
+		<ul class="tab"><!-- 탭 제목만 따로 설정,링크 걸 때 # 키워드를 찾아갈 수 있도록 설계 -->
+			<li><a href="#tab1">JavaScript<a></li>
+			<li><a href="#tab2">CSS<a></li>
+			<li><a href="#tab3">HTML<a></li>
+			<li><a href="#tab4">JQuery<a></li>
+			<li><a href="#tab5">XHTML<a></li>
+		</ul>
+		<ul class="panel"><!-- 선택된 탭에 따라서 내용이 나오는 방법 -->
+			<li id="tab1"></li>
+			<li id="tab2"></li>
+			<li id="tab3"></li>
+			<li id="tab4"></li>
+			<li id="tab5"></li>
+		</ul>
+	</div>
+	
+</body>
+</html>

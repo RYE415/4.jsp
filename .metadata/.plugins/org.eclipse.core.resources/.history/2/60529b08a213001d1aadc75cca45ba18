@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<title></title>
+
+<script>
+  $(function(){
+	  /*
+	    $.post()-> 내부적으로 $.ajax()를 호출(post방식으로 서버에 요청)
+	    		-> 서버에 요청한 문서 결과를 콜백함수 전달 ->
+	    		-> 콜백함수가 받아서 원하는 위치에 출력
+	  */
+	  $('#saveButton').click(function(){
+		  var value=$('#name').val();
+		  alert(value)
+	  })
+	  
+	  //지우기
+	  $('#clearButton').click(function(){
+		  
+	  })
+	  
+  })
+</script>
+</head>
+<body>
+	이름:<input type="text" id="name"><br><p>
+	<button id="saveButton">전송</button>
+	<button id="clearButton">지우기</button>
+	<div id="resultDIV"></div>
+	
+</body>
+</html>

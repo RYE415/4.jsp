@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax의 개요 및 작성법(xhr 객체)</title>
+<script>
+//	var test=function(){} 익명함수
+	function test(){
+	/*
+	IE(ActiveObeject속성),IE 외 chrome,firefox,,,(XMLHttpRequest속성)
+	//IE7 이후부터 통합=>XMLHttpRequest
+	*/
+	if(window.XMLHttpRequest){
+		var xhrObject=new XMLHttpRequest();//객체생성
+		alert(xhrObject);//[object XMLHttpRequest]
+	}
+	}
+</script>
+</head>
+<body onload="test()">
+
+</body>
+</html>

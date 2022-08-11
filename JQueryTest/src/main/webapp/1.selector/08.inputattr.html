@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<title>08.iuputattr.html</title>
+
+<script>
+  $(function(){
+	//입력양식에 관련된 필터 속성 선택자->요소[속성=값]=>요소:속성명
+	//$('input[type=text]').val('값을 입력하세요');
+	  $('input:text').val('필터 선택 값을 입력하세요');
+	//input 태그 중에서 password 속성을 찾아서 배경색을 pink,값 입력을 저장
+	  $('input:password').css('background','pink').val('값 입력');
+	//버튼의 이름을 회원가입으로 변경하라
+	//$('input[type=button]').val('회원가입');
+	  $('input:button').val('회원가입');
+  })
+</script>
+</head>
+<body>
+	<h1>jQuery 필터선택자 예제</h1>
+	<input type="text">
+	<input type="password">
+	<input type="button">
+	
+</body>
+</html>

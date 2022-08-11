@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<title>06.$.ajax.html</title>
+<!-- 
+[
+  {
+   "id":"1",
+   "name":"레몬",
+   "price":"3000",
+   "description":"피로회복에 좋고 비타민C 풍부"
+  },
+  ,,,
+ -->
+<script>
+  $(function(){
+  })
+</script>
+</head>
+<body>
+	<h1>jQuery 실습</h1>
+	
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<title></title>
+
+<script>
+  $(function(){
+  })
+</script>
+</head>
+<body>
+	<div>
+		<a href="#" id="menu1">메뉴보기1</a>
+		<a href="#" id="menu1-1">메뉴보기1 삭제</a>
+	</div>
+	
+</body>
+</html>

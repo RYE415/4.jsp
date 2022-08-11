@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>2.이미지,링크문자열.html</title>
+ </head>
+ <body>
+  <h3>이미지 불러오기</h3>
+  <!-- 
+  절대경로=>c:\webtest\1.client\1일차~ 드라이브표시
+  상대경로=>현재폴더를 기준->불러올 파일을 지정해서 불러오는 방식
+          1.client(..)상위폴더
+             1일차(.)현재폴더
+			     images->waiting~
+1.src=>이미지를 불러올 겨로를 지정
+2.width,height=>이미지크기(픽셀수=>모니터에 출력하는 점의 갯수)확대,축소
+3.border="테두리(선의 굵기)를 지정할때 사용->0 디폴터 테두리 X
+4.alt="툴팁문자열 표시"=>html5->figure,figcaption(이미지 설명문)
+  -->
+<figure>
+	<img src="images/waiting.jpg"
+			width="250" height="400" border="0" alt="툴팁연습">
+	<figcaption>이미지에 대한 설명글(우체통)</figcaption>
+</figure>
+<hr><!-- 선을 그을때 사용(선의 속성 html5에서는 사용X -->
+<figure>
+	<img src="images/fish.jpg"
+			width="324" height="227" border="0">
+	<figcaption>이미지에 대한 설명글(망둥어)</figcaption>
+</figure>
+<!-- 
+ 링크 href="이동하는 페이지명(html) or 사이트주소 
+       target="_blank" (새창)(브라우저 열때)
+	   #키워드(main)
+	   href="mailto:실제 메일주소를 연결
+-->
+<a href="http://www.naver.com">네이버</a><br>
+<a href="http://www.daum.net" target="_blank">다음</a><br>
+<a href="#">문서 내부에서의 특정위치로 이동할때 사용></a>
+<hr>
+공부하시다가 문의가 있으시면 <a href="mailto:nup49rok1@empas.com">
+  저한테 메일좀</a>
+ </body>
+</html>

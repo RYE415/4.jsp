@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3.domob3.html(key,value를 이용해서 객체생성(JSON 표기법))</title>
+<script>
+/*
+  형식)var 객체명={} //비어있는 객체(ex 임대중)
+  	  var 객체명={
+		  속성명(=멤버변수명):값1
+		  속성명2:값2,
+		  ,,,
+		  함수명:function(매개변수){내용 기술}
+		  ,,,
+  }
+ */
+ //var person="홍길동";//문자열 변수
+ //var person={}//class Person{}와 동일하다(내용없는 객체)
+ //var person=[]//배열[{},{},{}]//여러개의 객체를 담을 수 있는 배열 객체 생성
+ var person={
+	 name:'홍길동',//key(속성명):value(값)
+	 age:23,
+	 eat:function(food){//public void setEat(String food){~}
+		 alert(this.name+'은 오늘 '+food+'을 먹을 예정입니다.');
+	 }
+ }
+ //객체명.속성명
+ document.write(person.name);
+ person.eat('도시락');
+</script>
+</head>
+<body>
+
+</body>
+</html>

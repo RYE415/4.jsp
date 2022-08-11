@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="J2EE_EXPORT_OVERWRITE" value="true"/>
+	<item key="J2EE_EXPORT_SOURCE" value="true"/>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="Apache Tomcat v9.0"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\webtest\4.jsp\7일차(회원관리 프로그램-중복id체크,우편번호검색,회원가입 메서드작성)\2.우편번호검색까지 구현\JspMember.war"/>
+		<item value="C:\webtest\4.jsp\7일차(회원관리 프로그램-중복id체크,우편번호검색,회원가입 메서드작성)\1.중복id까지 구현\JspMember.war"/>
+		<item value="C:\webtest\4.jsp\war file\JspMember.war"/>
+		<item value="C:\webtest\4.jsp\1일차(웹개발 환경 개요및 구축 및 JSP 작성방법\JspStudy.war"/>
+	</list>
+	<list key="J2EE_IMPORT_null">
+		<item value="C:\webtest\4.jsp\14일차(모델2 게시판의 글목록보기(2),글쓰기구현)\장바구니담그기\SessionJang.war"/>
+		<item value="C:\webtest\4.jsp\sou\JspBoard2.war"/>
+		<item value="C:\webtest\4.jsp\14일차(모델2 게시판의 글목록보기(2),글쓰기구현)\3.모델2로 작성한 게시판의 글목록보기까지 구현\JspBoard2.war"/>
+		<item value="C:\webtest\4.jsp\12일차(모델1의 글삭제마무리 및 jstl,el개요 및 작성법)\1.게시판의 글삭제까지 구현\JspBoard.war"/>
+		<item value="C:\webtest\4.jsp\5일차(자바빈즈 정리및 쿠키와 세션)\2.쿠키와세션예제\JspWork3.war"/>
+		<item value="C:\webtest\4.jsp\2일차(지시어의 개요및 작성법,서블릿의 개요,작성법)\ServletTest.war"/>
+	</list>
+</section>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<title>08.$.getJSON.site.html</title>
+<!-- 
+({
+		"title": "Recent Uploads tagged raccoon",
+		"link": "https:\/\/www.flickr.com\/photos\/tags\/raccoon\/",
+		"description": "",
+		"modified": "2022-08-04T16:20:27Z",
+		"generator": "https:\/\/www.flickr.com",
+		"items": [
+	   {
+			"title": "Raccoon",
+			"link": "https:\/\/www.flickr.com\/photos\/191213685@N02\/52263285119\/",
+			"media": {"m":"https:\/\/live.staticflickr.com\/65535\/52263285119_901973974e_m.jpg"},
+			"date_taken": "2022-05-17T21:18:11-08:00",
+			"description": " <p><a href=\"https:\/\/www.flickr.com\/people\/191213685@N02\/\">Rem_photography<\/a> posted a photo:<\/p> <p><a href=\"https:\/\/www.flickr.com\/photos\/191213685@N02\/52263285119\/\" title=\"Raccoon\"><img src=\"https:\/\/live.staticflickr.com\/65535\/52263285119_901973974e_m.jpg\" width=\"240\" height=\"160\" alt=\"Raccoon\" \/><\/a><\/p> ",
+			"published": "2022-08-04T16:20:27Z",
+			"author": "nobody@flickr.com (\"Rem_photography\")",
+			"author_id": "191213685@N02",
+			"tags": "travel vancouver canada animals nature wildlife wild raccoon"
+	   },,,]
+-->
+<script>
+  $(function(){
+	  $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?"
+			  +"tags=raccoon&tagmode=any&format=json&jsoncallback=?",function(data){
+		  //태그 X $.each(1.컬렉션객체(배열포함),2.function(인덱스번호,항목-배열일때))
+		  $.each(data.items,function(i,item){
+									//item->배열에서 꺼낸 객체 하나 하나
+		  //<img src="경로 포함해서 불러올 파일명">
+		  //$("img") -> 기존에 존재하는 img태그를 가져올 대 사용						
+			$("<img>")
+		  
+			  
+		  })
+		  
+	  })//function(data){}
+  })
+</script>
+</head>
+<body>
+	<div id="images">
+	
+	</div>
+	
+</body>
+</html>

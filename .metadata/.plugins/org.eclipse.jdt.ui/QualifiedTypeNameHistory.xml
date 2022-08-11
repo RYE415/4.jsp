@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.SQLOutput"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.util.log.SystemLogHandler"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="org.apache.taglibs.standard.tag.common.fmt.RequestEncodingSupport"/>
+    <fullyQualifiedTypeName name="krh.board.BoardDTO"/>
+    <fullyQualifiedTypeName name="krh.board.BoardDAO"/>
+</qualifiedTypeNameHistroy>

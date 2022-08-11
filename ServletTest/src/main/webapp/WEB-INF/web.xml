@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ServletTest</display-name>
+  
+  <!-- 서블릿의 환경설정(제일 먼저 내부적으로 읽어들이는 역할) -->
+  <!-- 1.실행시킬 서블릿의 이름 지정 -->
+ <!--  <servlet>
+  	<servlet-name>Hello</servlet-name>
+  	<servlet-class>HelloTest</servlet-class>
+  </servlet>
+  
+  2.웹 상에서 어떻게 서블릿을 실행시키는지 접근 방법을 지정
+  <servlet-mapping>
+  	<servlet-name>Hello</servlet-name>
+  	<url-pattern>/abc/test/imsi/HelloTest</url-pattern>
+  </servlet-mapping> -->
+  
+  <servlet>
+  	<servlet-name>GetDate</servlet-name>
+  	<servlet-class>GetDate</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>GetDate</servlet-name>
+  	<url-pattern>/GetDate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

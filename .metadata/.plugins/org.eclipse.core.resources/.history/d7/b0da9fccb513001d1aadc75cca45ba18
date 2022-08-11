@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<title>05.json.html</title>
+<script>
+
+	function print1(){
+		
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="test" onclick="print1()">
+	<input type="button" value="이름변경" onclick="">
+</body>
+</html>

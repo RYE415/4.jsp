@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="../jquery-3.4.1.min.js"></script>
+<title>01.ready()함수</title>
+<script>
+	function test(){
+		alert("jQuery소개");
+	}
+</script>
+</head>
+<body onload="test()">
+
+</body>
+</html>

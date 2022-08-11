@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>1.toggle(1).html</title>
+  <script>
+    //var toggle=function(){ //익명함수->jQuery
+	  function toggle(){
+        //alert("toggle() 테스트");
+        //document.form이름.버튼이름(입력양식).속성명->확인
+		//var b_val=document.f.b_name.value;//(1)
+		var b_val=document.getElementById("b_name").value;
+		//alert(b_val);
+		/* (1)
+        if(b_val=="네이버")
+			//b_val="다음"//(X)
+            document.f.b_name.value="다음";//~value=b_val
+        else
+			document.f.b_name.value="네이버";
+	  }*/
+	  /*
+       삼항연산자->if문 대신 사용 형식) var 변수명=(조건식)?참인문장:거짓인문장;
+	                    조건식이 참이면 참인문장값을 선택=>변수에 저장
+						조건식이 거짓이면 거짓인문자을 선택->변수에 저장
+						조건에 따라서 처리할 문장이 한문장이상 복잡->if문 사용할것.
+	  */
+	   var text=(b_val=="네이버")?"다음":"네이버";
+	   document.f.b_name.value=text;
+	  }
+  </script>
+ </head>
+ <body>
+    <center>
+    <h1>버튼을 눌러주세요</h1>
+	<form name="f">
+		 <input type="button" name="b_name"  id="b_name"
+		            value="네이버" onclick="toggle()">
+	</form>
+	</center>
+ </body>
+</html>

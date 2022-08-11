@@ -1,0 +1,7 @@
+BranchProjectTracker__C\:\\Users\\NH\\git\\repository\\.git_hotfix=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>\\JspStudy</project>\r\n</projects>
+BranchProjectTracker__C\:\\Users\\NH\\git\\repository\\.git_master=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<projects>\r\n<project>\\JspStudy</project>\r\n</projects>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>final commit</message>\r\n<message>Merge remote-tracking branch &apos;origin/master&apos;&\#x0A;&\#x0A;Conflicts\:&\#x0A;&\#x09;JspStudy/src/main/webapp/abc/imsi.jsp&\#x0A;</message>\r\n<message>imsi.jsp modified on Local repository</message>\r\n<message>first commit</message>\r\n<message>merge testing</message>\r\n<message>hotfix modified percent</message>\r\n<message>testing2</message>\r\n<message>testing</message>\r\n<message>hello.jsp success modified</message>\r\n<message>create project&\#x0A;create name print</message>\r\n</messages>
+eclipse.preferences.version=1
+repositories_view_filters=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<FilterCache/>
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300

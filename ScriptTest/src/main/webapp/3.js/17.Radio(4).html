@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>4.Radio(4).html</title>
+   <script>
+      function test(){
+         //1.만약에 1.gif를 선택했다면
+		 if(document.myform.ok[0].checked==true)
+		     alert("1번그림이 맘에 드시는 군요!");
+		 else if(document.myform.ok[1].checked==true)
+		     alert("2번그림이 맘에 드시는 군요!");
+		 else if (document.myform.ok[2].checked==true)
+		     alert("3번그림이 맘에 드시는 군요!");
+		 else
+		     alert("3개의 그림중 하나는 무조건 선택해야 합니다.");
+	  }
+   </script>
+ </head>
+ <body>
+   <form name="myform">
+     맘에 드시는 그림을 선택하세요<p>
+<!-- 
+  여러개의 항목이지만 하나밖에 선택할 수 없는경우=>배열을 이용(같은 변수명을 사용)
+       ok=new Array("1.gif","2.gif","3.gif")=>ok[0],ok[1],ok[2]
+	   실무예) 결재수단을 선택 1.카드결재 2.현금 3.계좌이체 4.포인트
+-->
+	 <input type="radio" name="ok">1.<img src="../images/1.gif"><p>
+     <input type="radio" name="ok">2.<img src="../images/2.gif"><p>
+	 <input type="radio" name="ok">3.<img src="../images/3.gif"><p>
+
+	 <input type="button" value="확인" onclick="test()">
+   </form>
+ </body>
+</html>
