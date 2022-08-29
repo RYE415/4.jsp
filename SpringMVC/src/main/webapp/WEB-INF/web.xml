@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>SpringMVC</display-name>
+  
+  <!-- 
+  요청을 받아서 처리해주는 컨트롤러 역할 클래스를 등록(환경설정파일생성)
+  서블릿 별칭명(test)-servlet.xml
+   -->
+   <servlet>
+   	<servlet-name>test</servlet-name>
+   	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   	<servlet-name>test</servlet-name>
+   	<url-pattern>*.do</url-pattern>
+   </servlet-mapping>
+   
+   
+   
+   
+   
+   
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

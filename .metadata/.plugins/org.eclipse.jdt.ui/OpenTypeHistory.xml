@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=JspBoard2/src\/main\/java&lt;action{CommandAction.java[CommandAction" modifiers="513" timestamp="1658298537687"/>
+    <typeInfo handle="=SpringTest/src&lt;spring{MessageInter.java[MessageInter" modifiers="513" timestamp="1660713464931"/>
+    <typeInfo handle="=SpringTest3\(db)/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;studentdb{StudentDAO.java[StudentDAO" modifiers="513" timestamp="1661139725538"/>
+    <typeInfo handle="=SpringTest3\(db)/C:\/Users\/NH\/.m2\/repository\/org\/springframework\/spring-jdbc\/4.2.5.RELEASE\/spring-jdbc-4.2.5.RELEASE.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework=/=/maven.artifactId=/spring-jdbc=/=/maven.version=/4.2.5.RELEASE=/=/maven.scope=/compile=/&lt;org.springframework.jdbc.core(RowMapper.class[RowMapper" modifiers="1537" timestamp="1661136515512"/>
 </typeInfoHistroy>

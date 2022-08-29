@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<!-- 5개의 구성요소에 해당되는 환경설정 -->
+<!-- (4)viewResolver(위치(prefix),이동할 페이지의 확장자(suffix)  -->
+<bean id="viewResolver"
+      class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+     <property name="viewClass" 
+                   value="org.springframework.web.servlet.view.JstlView" />
+     <property name="prefix" value="/" />
+     <property name="suffix" value=".jsp"></property>
+ </bean>
+
+<!--(2) 요청명령어에 따른 처리해주는 컨트롤러를 문의? -->
+<bean id="defaultHandlerMapping" 
+         class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+
+<!--(3)요청명령어에 해당하는 컨트롤러를 이용
+<bean name="/요청명령어.do" class="패키지명....처리할 컨트롤러 클래스명" />
+    /index.do->/list.jsp
+     setViewName("list");
+  -->
+<!-- 0.DB접속 -->
+<bean id="boardDAO"   class="krh.BoardDAO" />
+
+<!-- 1.글목록보기 (list()) setDao(BoardDAO객체)-->
+<bean name="/list.do"  class="krh.ListActionController">
+  <property name="dao">
+     <ref bean="boardDAO" />
+  </property>
+</bean>
+  
+<!-- 2.글쓰기 폼으로 이동시 사용-->
+<bean name="/writeui.do"  
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+         <property name="viewName" value="write" />
+</bean>
+
+<!-- 3)글쓰기(글 수정하기와 거의 유사) -->
+<bean name="/write.do"  class="krh.WriteActionController">
+  <property name="dao">
+     <ref bean="boardDAO" />
+  </property>
+  <property name="commandClass"
+  			value="krh.BoardCommand" />
+</bean>
+
+<!-- 4) 글 상세보기 -->
+<bean name="/retrieve.do"  class="krh.RetrieveActionController">
+  <property name="dao">
+     <ref bean="boardDAO" />
+  </property>
+</bean>
+
+
+<!-- 5) 글 수정하기 -->
+<bean name="/update.do"  class="krh.UpdateActionController">
+  <property name="dao">
+     <ref bean="boardDAO" />
+  </property>
+  <property name="commandClass"
+  			value="krh.BoardCommand" />
+</bean>
+
+<!-- 6.글 삭제하기 -->
+<bean name="/delete.do"  class="krh.DeleteActionController">
+  <property name="dao">
+     <ref bean="boardDAO" />
+  </property>
+</bean>
+
+<!-- 7. 글 검색하기(list.do) -->
+<bean name="/search.do"  class="krh.SearchActionController">
+  <property name="dao">
+     <ref bean="boardDAO" />
+  </property>
+</bean>
+
+</beans>
+
+
+
+
+
+
+
+
+

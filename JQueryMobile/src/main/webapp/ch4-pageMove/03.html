@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" 
+	  content="width=device-width,initial-scale=1.0,
+		 	   maximum-sclae=1.0,minimum-scale=1.0,
+		 	   user-scalable=no">
+	
+<title>페이지전환2</title>
+<!-- mobile css->jQuery(1.8~1.11)->mobile jquery(1.4.5)-->
+<link href="../mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+<script type="text/javascript" src="../mobile/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!-- 외부의 파일을 불러오는 경우(id가 필요없다) -->
+<div data-role="page">
+	<div data-role="header">
+		<h1>세번째 페이지</h1>
+	</div>
+	<!-- data-ajax="true"(디폴트)=>메모리 공유(스타일 공유해서 사용)
+		 data-ajax="false"=>url 변경 시 전체 페이지를 다시 로드해야 한다.
+		 					(메모리를 공유X 때문에)
+	 -->
+	<div data-role="content">
+		<a href="03-2.html" data-role="button"
+		   data-ajax="false">네번째 화면으로 이동</a> 
+	</div>
+	<div data-role="footer">
+		<h1>화면 하단</h1>
+	</div>
+
+</div>
+<!-- 두번째 페이지 -->
+<!-- <div data-role="page" id="second_page">
+	<div data-role="header">
+		<h1></h1>
+	</div>
+	<div data-role="content">
+	  <a href="#first_page" data-role="button">첫번째로 이동</a>
+	</div>
+	<div data-role="footer">
+		<h1>화면 하단</h1>
+	</div> -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" 
+	  content="width=device-width,initial-scale=1.0,
+		 	   maximum-sclae=1.0,minimum-scale=1.0,
+		 	   user-scalable=no">
+	
+<title></title>
+<!-- mobile css->jQuery(1.8~1.11)->mobile jquery(1.4.5)-->
+<link href="../mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+<script type="text/javascript" src="../mobile/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+	<div data-role="header">
+		<h1>네번째 페이지(공유X 단독사용)</h1>
+		<!-- 
+			이전으로 되돌아가는 기능을 부여하는 속성=>data-rel="back"
+			history.back(),history.go(-1)와 같은 기능
+		 -->
+		 <a data-icon="arrow-l" data-rel="back">이전</a>
+	</div>
+	<div data-role="content">
+		<p>jQuery Mobile page 구성
+	</div>
+	<div data-role="footer">
+		<h1>화면 하단</h1>
+	</div>
+
+</div>
+</body>
+</html>

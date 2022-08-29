@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="board">
+ 
+ <!-- 1.글 목록보기 -->
+ <select id="list" resultType="board">
+ 	select * from springboard order by num desc
+ </select>
+ <!-- 2.글쓰기(게시물번호) -->
+ 
+ <!-- 3.글쓰기 -->
+
+ 
+</mapper>
